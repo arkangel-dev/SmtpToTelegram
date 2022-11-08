@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmtpToTelegram", "SmtpToTelegram\SmtpToTelegram.csproj", "{501713FA-CC38-42F7-9AD8-3FE60E437139}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmtpForwarder", "SmtpForwarder\SmtpForwarder.csproj", "{ECAA06C9-253A-48AE-B93E-5E8BE8B89D21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{C0C32C54-C3C7-4035-AF3F-F909FA52CCDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{501713FA-CC38-42F7-9AD8-3FE60E437139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{501713FA-CC38-42F7-9AD8-3FE60E437139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{501713FA-CC38-42F7-9AD8-3FE60E437139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{501713FA-CC38-42F7-9AD8-3FE60E437139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECAA06C9-253A-48AE-B93E-5E8BE8B89D21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECAA06C9-253A-48AE-B93E-5E8BE8B89D21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECAA06C9-253A-48AE-B93E-5E8BE8B89D21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECAA06C9-253A-48AE-B93E-5E8BE8B89D21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0C32C54-C3C7-4035-AF3F-F909FA52CCDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0C32C54-C3C7-4035-AF3F-F909FA52CCDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0C32C54-C3C7-4035-AF3F-F909FA52CCDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0C32C54-C3C7-4035-AF3F-F909FA52CCDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {276D67D8-EFBB-42E8-B728-AB700B601D40}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+{
+  "port": 5025,
+  "hostname": "localhost",
+  "bot_token": "???",
+  "target_chat": "???"
+}
