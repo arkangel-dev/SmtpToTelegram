@@ -51,5 +51,9 @@ namespace UI {
                 this.DebugWindow_UIControl.Text += text;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e) {
+            fw?.SendTestMessage();
+        }
     }
 }

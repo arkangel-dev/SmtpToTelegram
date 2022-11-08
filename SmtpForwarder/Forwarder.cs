@@ -99,5 +99,9 @@ namespace SmtpForwarder {
                 new FixedConfigReader.FixedConfigReaderSegment("??", "target_chat")
             );
         }
+
+        public void SendTestMessage() {
+            telegramHandler?.SendMessage("This is a test message. Beep Boop.");
+        }
     }
 }
