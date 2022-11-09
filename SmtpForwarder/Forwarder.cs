@@ -39,10 +39,22 @@ namespace SmtpForwarder {
         private void DebugMessage(string message) => Console.WriteLine(message);
 
         private void SendMessage(MimeMessage message) {
-            OnDebug?.Invoke("New message... Forwarding...");
+            
             new Task(() => {
 
-                telegramHandler?.SendMessage(HtmlToPlainText(message.GetTextBody(MimeKit.Text.TextFormat.Html)));
+                var content = message.GetTextBody(MimeKit.Text.TextFormat.Html);
+                if (String.IsNullOrWhiteSpace(content)) {
+                    content = message.GetTextBody(MimeKit.Text.TextFormat.Plain);
+                }
+
+                OnDebug?.Invoke("New message... Forwarding...");
+                if (content.Length > 10) {
+                    OnDebug?.Invoke($"Message : {content.Substring(0, 10)}");
+                } else {
+                    OnDebug?.Invoke($"Message : {content}");
+                }
+
+                telegramHandler?.SendMessage(HtmlToPlainText(content));
             }).Start();
         }
 
